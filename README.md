@@ -8,8 +8,9 @@ Purpose of the image classification model
 The purpose of this image classification model is to automatically identify and differentiate mangrove species from images, providing a fast and accurate way to support environmental monitoring, conservation efforts, and educational activities. It aims to assist researchers, students, and environmentalists in recognizing mangrove species without requiring extensive botanical expertise, making species identification more efficient and accessible.
 
 B. Plant Species Section 
+<img width="377" height="444" alt="training" src="https://github.com/user-attachments/assets/72f40d5c-bb30-4953-b677-ce68c90e5ffc" />
 
-
+ 
 
 
 
