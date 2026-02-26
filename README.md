@@ -29,7 +29,6 @@ B. Plant Species Section
 
 
 
-
 C. MODEL TRAINING DETAILS
 
 <img width="1366" height="768" alt="Screenshot (114)" src="https://github.com/user-attachments/assets/2be7c207-2955-4f76-af04-a276fabfad90" />
