@@ -22,13 +22,6 @@ B. Plant Species Section
 
 
 
-
-
-
-
-
-
-
 C. MODEL TRAINING DETAILS
 
 <img width="1366" height="768" alt="Screenshot (114)" src="https://github.com/user-attachments/assets/2be7c207-2955-4f76-af04-a276fabfad90" />
@@ -55,8 +48,83 @@ D. MODEL EVALUATION
 <img width="156" height="383" alt="9" src="https://github.com/user-attachments/assets/16761b3d-2696-4a8d-836d-ea706e4722c1" />
 <img width="157" height="436" alt="10" src="https://github.com/user-attachments/assets/4822d6cb-98a0-42c8-a66d-d396926a2dd8" />
 
+REFLECTION QUESTIONS: 
+
+Answer the following questions based on your experience:
+1. How did the number of images per class affect your model’s accuracy?
 
 
+2. Which plant species were most commonly misclassified and why?
+ Answer: Rhizophora mucronata ↔ Rhizophora stylosa
+Why misclassified:
+Very similar prop roots (stilt roots)
+Leaves are both elliptical and glossy
+Differences (flower size, style length) are not visible in images
+👉 The model mostly sees overall shape, not tiny botanical details.
+
+- Bruguiera gymnorhiza ↔ Bruguiera × hainesii
+Why misclassified:
+Same genus = almost identical leaf shape and color
+Hybrid species (B. × hainesii) visually overlaps both parent species
+Flowers/fruits (key identifiers) are rarely captured in datasets
+
+- Sonneratia caseolaris ↔ Sonneratia ovata
+Why misclassified:
+Similar rounded leaves
+Both have pneumatophores (breathing roots)
+Bark and flower differences are subtle and often excluded from images
+
+- Avicennia officinalis ↔ Lumnitzera littorea
+Why misclassified:
+Overlapping leaf size and canopy shape
+Images Taken from far away hide:
+Salt glands (Avicennia)
+Flower color (Lumnitzera)
+
+-Acanthus ilicifolius ↔ Wedelia biflora
+Why misclassified:
+Both are low-growing coastal plants
+Similar green leaf dominance
+Flowers (spiky vs daisy-like) are not always visible in training images
+
+- Scaevola taccada ↔ Batis maritima (Saltwort)
+Why misclassified:
+Both found in beachfront/coastal zones
+Background similarity (sand, shoreline vegetation)
+Leaf texture differences are subtle for beginners’ datasets
+
+- Pongamia pinnata ↔ Erythrina variegata
+Why misclassified:
+Both are medium to large coastal trees
+Similar compound leaves
+Trunks and flowers (key differences) often missing in images
+
+- Cynometra ramiflora ↔ Ficus superba
+Why misclassified:
+Dense foliage and similar tree silhouette
+Aerial roots (Ficus) may not appear in cropped images
+Leaf venation not easily learned by small models
+
+-Kandelia candel ↔ Rhizophora species
+Why misclassified:
+All have prop/stilt roots
+Similar mangrove habitat and growth form
+Seedling differences are rarely captured
+
+-Osbornia octodonta ↔ Scyphiphora hydrophylacea
+Why misclassified:
+Rare species = few training images
+Small leaves + shrubs = low visual uniqueness
+Model bias toward more common species
 
 
-
+3. How did changing the epochs, batch size, or learning rate affect the training results?
+Answer: Increasing the epochs improved accuracy at first, but too many epochs caused overfitting. Using a smaller batch size resulted in more stable learning and better validation accuracy, while larger batches trained faster but reduced generalization. A high learning rate made training unstable, a low learning rate slowed convergence, and a moderate learning rate produced the best and most stable training results.
+   
+4. What challenges did you encounter during dataset collection and labeling?
+Answer: Species like Bruguiera × hainesii and Scyphiphora hydrophylacea had very few available images
+Caused class imbalance and biased predictions
+ 
+5.  If you were to improve your model, what specific changes would you make and why?
+   Answer: I would improve the model by adding more balanced images (especially for rare mangrove species), applying data augmentation, and using a pre-trained CNN through transfer learning. I would also fine-tune the epochs, batch size, and learning rate and verify image labels carefully. These changes would reduce misclassification of similar species, prevent overfitting, and improve overall accuracy and generalization.
+   
