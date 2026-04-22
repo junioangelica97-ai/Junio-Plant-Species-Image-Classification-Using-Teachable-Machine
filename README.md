@@ -112,9 +112,11 @@ Model bias toward more common species
 Answer: Increasing the epochs improved accuracy at first, but too many epochs caused overfitting. Using a smaller batch size resulted in more stable learning and better validation accuracy, while larger batches trained faster but reduced generalization. A high learning rate made training unstable, a low learning rate slowed convergence, and a moderate learning rate produced the best and most stable training results.
    
 4. What challenges did you encounter during dataset collection and labeling?
+
 Answer: Species like Bruguiera × hainesii and Scyphiphora hydrophylacea had very few available images
 Caused class imbalance and biased predictions
  
 5.  If you were to improve your model, what specific changes would you make and why?
-   Answer: I would improve the model by adding more balanced images (especially for rare mangrove species), applying data augmentation, and using a pre-trained CNN through transfer learning. I would also fine-tune the epochs, batch size, and learning rate and verify image labels carefully. These changes would reduce misclassification of similar species, prevent overfitting, and improve overall accuracy and generalization.
+
+ Answer: I would improve the model by adding more balanced images (especially for rare mangrove species), applying data augmentation, and using a pre-trained CNN through transfer learning. I would also fine-tune the epochs, batch size, and learning rate and verify image labels carefully. These changes would reduce misclassification of similar species, prevent overfitting, and improve overall accuracy and generalization.
    
