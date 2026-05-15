@@ -43,8 +43,11 @@ REFLECTION QUESTIONS:
 Answer the following questions based on your experience:
 1. How did the number of images per class affect your model’s accuracy?
 
+Answer: Because deep learning models learn best when they have sufficient instances for each category, the number of photos per class has a direct impact on the model's accuracy. Since the model was exposed to more changes during training, classes with more photos typically had higher prediction accuracy.
+However, because the model was unable to adequately learn their features, classes with a small number of photos frequently produced reduced accuracy, poor recall, or misclassification. Additionally, an unbalanced dataset may lead the model to ignore minority classes and prefer classes with a large number of photos.
 
 2. Which plant species were most commonly misclassified and why?
+
  Answer: Rhizophora mucronata ↔ Rhizophora stylosa
 Why misclassified:
 Very similar prop roots (stilt roots)
@@ -109,6 +112,7 @@ Model bias toward more common species
 
 
 3. How did changing the epochs, batch size, or learning rate affect the training results?
+
 Answer: Increasing the epochs improved accuracy at first, but too many epochs caused overfitting. Using a smaller batch size resulted in more stable learning and better validation accuracy, while larger batches trained faster but reduced generalization. A high learning rate made training unstable, a low learning rate slowed convergence, and a moderate learning rate produced the best and most stable training results.
    
 4. What challenges did you encounter during dataset collection and labeling?
