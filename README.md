@@ -1,6 +1,8 @@
 # Junio-Plant-Species-Image-Classification-Using-Teachable-Machine
 exported file - https://drive.google.com/file/d/1HjD0KYd_HllIooZmziKArnCUVXPp_JcG/view?usp=sharing
 
+All files Uploaded here: https://drive.google.com/drive/folders/1buMtccDFJZvPyLRyV5QWlYFHL6tnICG_?usp=sharing 
+
 A. Project Overview
 Brief Description of the Project
 This project aims to develop an image classification system for mangrove species using Teachable Machine, a web-based tool that leverages machine learning for easy model creation. Users can train the model by providing images of different mangrove species, allowing the system to recognize and classify them accurately. This project helps in biodiversity monitoring, environmental conservation, and educational purposes by enabling quick identification of mangrove species through photos. It also demonstrates how accessible machine learning tools can be applied to ecological studies.
