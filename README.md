@@ -1,7 +1,6 @@
 # Junio-Plant-Species-Image-Classification-Using-Teachable-Machine
 exported file - https://drive.google.com/file/d/1HjD0KYd_HllIooZmziKArnCUVXPp_JcG/view?usp=sharing
 
-All files Uploaded here: https://drive.google.com/drive/folders/1buMtccDFJZvPyLRyV5QWlYFHL6tnICG_?usp=sharing 
 
 A. Project Overview
 Brief Description of the Project
