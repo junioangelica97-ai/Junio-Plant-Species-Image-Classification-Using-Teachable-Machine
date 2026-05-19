@@ -1,6 +1,5 @@
 # Junio-Plant-Species-Image-Classification-Using-Teachable-Machine
-exported file -d/14vpAl https://drive.google.com/file/Mr8haOKU0dHuUNW3aKqYAg8EVvZ/view?usp=drive_link
-
+exported file - https://drive.google.com/file/d/1HjD0KYd_HllIooZmziKArnCUVXPp_JcG/view?usp=sharing
 
 A. Project Overview
 Brief Description of the Project
@@ -9,8 +8,24 @@ This project aims to develop an image classification system for mangrove species
 Purpose of the image classification model
 The purpose of this image classification model is to automatically identify and differentiate mangrove species from images, providing a fast and accurate way to support environmental monitoring, conservation efforts, and educational activities. It aims to assist researchers, students, and environmentalists in recognizing mangrove species without requiring extensive botanical expertise, making species identification more efficient and accessible.
 
-B. Plant Species Section 
-BALIKAN RANI NAKO DREA SIR, KAY GALISUD PAKO GENERATE SA IMAGES. THANK YOU.
+B. Plant Species Section For each of the 20 plant species:
+● Display 1 representative image
+● Provide a basic description, including:
+○ Common name
+○ Scientific name (if available)
+○ Description of the plant species
+
+ 
+ Scientific Name:  Rhizopra Mucronata / 
+  Common Name: Red Mangrove / Bakauan lalaki
+  Description:A mangrove tree species commonly found in coastal and muddy areas. It has strong stilt roots that help protect shorelines from erosion and provide shelter for marine animals. 
+
+  
+<img width="259" height="194" alt="rhizopora" src="https://github.com/user-attachments/assets/bd8d8199-f458-42fa-9338-c0060b4fe40f" />
+
+
+
+
 
 C. MODEL TRAINING DETAILS
 
